@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h2{
+  text-align: left;
+}
+#ShortBio{
+  text-align: left;
+}
+
+.AboutCard{
+  text-align: left;
+}
+
+.SideCard{
+  max-width: 400px;
+  height: 700px;
+}
+
+.myContentSidebar {
+  height: 66%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  margin-top: 70px;
+  margin-left: 2%;
+  top: 0; /* Stay at the top -- **THIS WILL CHANGE WHEN NAV BAR IS IMPLEMENTED** */
+  left: 0;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightblue;
+  border-radius: 1%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+
+.nameAndPic {
+  margin-top: 2px;
+  margin-bottom: 30px;
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.myContentSidebar .nameAndPic img{
+  height: 10%;
+  width: 100%;
+}
+
+.myContentSidebar .nameAndPic h3 {
+  color: rgb(131, 130, 130);
+  font-size: medium;
+}
+
+.myContentSidebar .heading {
+  border-radius: 26px;
+  height: 40px;
+  width: 173px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.myContentSidebar .heading img {
+  margin-right: 10px;
+}
+
+.cardFormat {
+  height: 85%; /*Full-height: remove this if you want "auto" height */
+  width: 60%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /*Stay on top */
+  margin-top: 70px;
+  margin-left: 30%;
+  top: 0; /* Stay at the top -- **THIS WILL CHANGE WHEN NAV BAR IS IMPLEMENTED** */
+  left: 0;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightblue;
+  border-radius: 1%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+p{
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align: left;
+}
+
+h5{
+  text-align: left;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+li{
+  text-align: left;
+}
+
+.TitleText{
+  text-align: center;
+}
+
+.bg-img {
+  /* The image used */
+  /* background-image: 'url('+require('./background.jpg')+')'; */
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 885px;
+  width: 800px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon a + a{
+  padding-left:1em;
+}
+
+.photoSlide{
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.cardDeck{
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 1%;
+}
+
+.homeText{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  filter:blur(0px);
+}
+
+.homeText h1{
+  color: #fff;
+  width: 300px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 1.25s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 330px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.circleProf{
+  background-color: rgb(0,0,0); /* Fallback color */
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  width: 215px;
+  height: 200px;
+  filter: blur(0px);
+  background-color: white; /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  filter:blur(0px);
+}
+
+.background{
+  height:100%;
+}
